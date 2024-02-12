@@ -3257,7 +3257,7 @@ class UWPMidiInit
 public:
     UWPMidiInit()
     {
-        winrt::init_apartment();
+        winrt::init_apartment(apartment_type::single_threaded);
     }
 };
 
